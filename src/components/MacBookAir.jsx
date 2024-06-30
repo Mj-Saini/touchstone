@@ -8,7 +8,7 @@ const MacBookAir = () => {
         King James Version
       </h2>
       <div className="flex flex-col">
-        <div className="max-w-[592px] py-5 px-7 bg-[#E7E6E2C9] rounded-tr-[41px]  rounded-bl-[41px] mt-12">
+        <div className="max-w-[592px] py-5 px-7 bg-[#E7E6E2C9] rounded-tr-[41px]  rounded-bl-[41px] mt-6 md:mt-12">
           <h2>DESCRIPTION</h2>
           <p className="text-black text-base md:text-xl lg:text-[22px] lg:!leading-[30px]">
             The King James Version (KJV), also the King James Bible (KJB) and
