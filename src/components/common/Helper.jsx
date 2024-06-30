@@ -1,11 +1,12 @@
-import fingerPrints from "../../assets/images/svg/fingerprints.svg";
-import handImg from "../../assets/images/png/hand-img.png";
+import cameraImg from "../../assets/images/svg/camera-img.svg";
+import gallryImg from "../../assets/images/svg/gallary-img.svg";
 
 export const sideBarData = [
   {
-    icon: fingerPrints,
-    tabs: "Terms and Conditions",
-    path: "/term-conditions",
+    icon: cameraImg,
+  },
+  {
+    icon: gallryImg,
   },
 ];
 export const heroData = [
@@ -36,71 +37,71 @@ export const chapter1Data = [
     about: [
       {
         description:
-          "The book of the generation of Jesus Christ, the son of David, the son of  Abraham.",
+          "The book of the generation of Jesus Christ, the son of David, the son of Abraham.",
       },
       {
         description:
-          "And Judas begat Phares and Zara of Thamar; and Phares begat Esrom; and  Esrom begat Aram;",
+          "Abraham begat Isaac; and Isaac begat Jacob; and Jacob begat Judas and his brethren;",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "And Judas begat Phares and Zara of Thamar; and Phares begat Esrom; and Esrom begat Aram;",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson begat Salmon;",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "And Salmon begat Booz of Rachab; and Booz begat Obed of Ruth; and Obed begat Jesse;",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "And Jesse begat David the king; and David the king begat Solomon of her that had been the wife of Urias;",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "And Solomon begat Roboam; and Roboam begat Abia; and Abia begat Asa;",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "And Asa begat Josaphat; and Josaphat begat Joram; and Joram begat Ozias;",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "And Ozias begat Joatham; and Joatham begat Achaz; and Achaz begat Ezekias;",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "And Ezekias begat Manasses; and Manasses begat Amon; and Amon begat Josias;",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "And Josias begat Jechonias and his brethren, about the time they were carried away to Babylon:",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "And after they were brought to Babylon, Jechonias begat Salathiel; and Salathiel begat Zorobabel;",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "And Zorobabel begat Abiud; and Abiud begat Eliakim; and Eliakim begat Azor;",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "And Azor begat Sadoc; and Sadoc begat Achim; and Achim begat Eliud;",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "And Eliud begat Eleazar; and Eleazar begat Matthan; and Matthan begat Jacob;",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "And Jacob begat Joseph the husband of Mary, of whom was born Jesus, who is called Christ.",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "So all the generations from Abraham to David are fourteen generations; and from David until the carrying away into Babylon are fourteen generations; and from the carrying away into Babylon unto Christ are fourteen generations.",
       },
     ],
   },
@@ -109,35 +110,35 @@ export const chapter1Data = [
     about: [
       {
         description:
-          "The book of the generation of Jesus Christ, the son of David, the son of  Abraham.",
+          "Now the birth of Jesus Christ was on this wise: When as his mother Mary was espoused to Joseph, before they came together, she was found with child of the Holy Ghost.",
       },
       {
         description:
-          "And Judas begat Phares and Zara of Thamar; and Phares begat Esrom; and  Esrom begat Aram;",
+          "Then Joseph her husband, being a just man, and not willing to make her a publick example, was minded to put her away privily.",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "But while he thought on these things, behold, the angel of the Lord appeared unto him in a dream, saying, Joseph, thou son of David, fear not to take unto thee Mary thy wife: for that which is conceived in her is of the Holy Ghost.",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "And she shall bring forth a son, and thou shalt call his name JESUS: for he shall save his people from their sins.",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "Now all this was done, that it might be fulfilled which was spoken of the Lord by the prophet, saying,",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "Behold, a virgin shall be with child, and shall bring forth a son, and they shall call his name Emmanuel, which being interpreted is, God with us.",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "Then Joseph being raised from sleep did as the angel of the Lord had bidden him, and took unto him his wife:",
       },
       {
         description:
-          "And Aram begat Aminadab; and Aminadab begat Naasson; and Naasson  begat Salmon;",
+          "And knew her not till she had brought forth her firstborn son: and he called his name JESUS.",
       },
     ],
   },
