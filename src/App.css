@@ -17,6 +17,11 @@
   background: #E7E6E2;
 }
 
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .ff_vardana_bold {
   font-family: 'Verdana-bold', sans-serif;
 }

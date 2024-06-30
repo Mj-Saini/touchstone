@@ -19,22 +19,22 @@ const Hero = () => {
             <div className="w-full lg:w-[191px] md:pe-2.5">
               <div className="bg-[#393F62] rounded-[41px] overflow-auto flex flex-row lg:flex-col justify-center gap-4 items-center px-4 py-4 lg:py-8">
                 <img
-                  className="w-16 sm:w-20 md:w-[156px]"
+                  className="w-16 rounded-[40px] sm:w-20 md:w-[156px]"
                   src={handImg}
                   alt="img"
                 />
                 <img
-                  className="w-16 sm:w-20 md:w-[156px]"
+                  className="w-16 rounded-[40px] sm:w-20 md:w-[156px]"
                   src={handImg}
                   alt="img"
                 />
                 <img
-                  className="w-16 sm:w-20 md:w-[156px]"
+                  className="w-16 rounded-[40px] sm:w-20 md:w-[156px]"
                   src={handImg}
                   alt="img"
                 />
                 <img
-                  className="w-16 sm:w-20 md:w-[156px]"
+                  className="w-16 rounded-[40px] sm:w-20 md:w-[156px]"
                   src={handImg}
                   alt="img"
                 />
