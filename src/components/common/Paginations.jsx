@@ -5,21 +5,15 @@ import { PreviousIcon } from "./Icons";
 
 const Paginations = () => {
   return (
-    <div className=" mt-8 pb-[66px]">
+    <div className=" sm:mt-8 pb-6 sm:pb-10 md:pb-[66px]">
       <div className="flex justify-between items-center md:py-4">
-        <button className="text-[#740000] font-normal text-base md:text-3xl lg:text-[32px] flex items-center">
+        <button className="text-[#740000] font-normal text-base md:text-3xl lg:text-[32px] flex items-center ">
           <PreviousIcon />
-          <span className="md:-translate-x-5 hidden sm:block">
-            {" "}
-            Previous Chapter
-          </span>
+          <span className="hidden sm:inline ">Previous Chapter</span>
         </button>
 
         <button className="text-[#740000] font-normal text-base md:text-3xl lg:text-[32px] flex items-center z-[2]">
-          <span className="md:translate-x-5 z-[1] hidden sm:block">
-            {" "}
-            Next Chapter
-          </span>
+          <span className="hidden sm:block"> Next Chapter</span>
           <span className="-scale-100 z-0">
             <PreviousIcon />
           </span>

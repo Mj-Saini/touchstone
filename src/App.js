@@ -5,10 +5,9 @@ import MainPage from "./pages/MainPage";
 
 function App() {
   return (
-    <div className="">
-      {/* <MainPage /> */}
+    <div className=" bg-[#E7E6E2]">
+      <MainPage />
       {/* <Chapter1Page /> */}
-      <SideBar />
     </div>
   );
 }

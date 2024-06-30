@@ -1,21 +1,21 @@
 import React from "react";
-import Chapter1 from "../components/Chapter1";
 import { chapter1Data } from "./../components/common/Helper";
 import Paginations from "../components/common/Paginations";
+import Header from "../components/common/Header";
 
 const Chapter1Page = () => {
   let globalIndex = 1;
   return (
-    <div>
-      <Chapter1 />
-      <div className="px-5 sm:px-10 lg:ps-[108px] lg:pe-[29px] w-full mt-5">
+    <div className="">
+      <Header />
+      <div className="px-5 sm:px-10 lg:ps-[185px] lg:pe-[29px] w-full mt-5">
         {chapter1Data.map((items, index) => (
           <div className="w-full flex flex-col items-center sm:items-start">
             <h2 className="ff_vardana_bold text-[#393F62] text-lg md:text-[25px] bg-[#CCBFAB38] inline-block px-2 py-1.5 shadow-drop_shadow rounded-md text-center sm:text-start">
               {items.heading}
             </h2>
             <div
-              className={`flex flex-col gap-3 pb-10 sm:pb-14 md:pb-[69px] ${
+              className={`flex flex-col gap-3 sm:pb-14 md:pb-[69px] ${
                 index !== 0 ? "pt-6 sm:pt-12" : " mt-3"
               }`}
             >

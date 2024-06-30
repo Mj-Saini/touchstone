@@ -15,32 +15,32 @@ const Hero = () => {
           Read The Bible
         </button>
         <div className="bg-hero-bg bg-cover bg-center bg-no-repeat">
-          <div className="flex flex-col lg:flex-row px-4 sm:px-10 lg:ps-[139px] lg:pe-10 pt-9 pb-14">
+          <div className="flex flex-col lg:flex-row px-4 sm:px-10 lg:ps-[139px] lg:pe-10 sm:pt-9 pb-14">
             <div className="w-full lg:w-[191px] md:pe-2.5">
-              <div className="bg-[#393F62] rounded-[41px] overflow-auto flex flex-row lg:flex-col justify-center gap-4 items-center px-4 py-4 lg:py-8">
+              <div className="bg-[#393F62] rounded-2xl md:rounded-[41px] overflow-auto flex flex-row lg:flex-col justify-center gap-2 md:gap-4 items-center md:px-4 py-4 lg:py-8">
                 <img
-                  className="w-16 rounded-[40px] sm:w-20 md:w-[156px]"
+                  className="w-14 rounded-[40px] sm:w-20 md:w-[156px]"
                   src={handImg}
                   alt="img"
                 />
                 <img
-                  className="w-16 rounded-[40px] sm:w-20 md:w-[156px]"
+                  className="w-14 rounded-[40px] sm:w-20 md:w-[156px]"
                   src={handImg}
                   alt="img"
                 />
                 <img
-                  className="w-16 rounded-[40px] sm:w-20 md:w-[156px]"
+                  className="w-14 rounded-[40px] sm:w-20 md:w-[156px]"
                   src={handImg}
                   alt="img"
                 />
                 <img
-                  className="w-16 rounded-[40px] sm:w-20 md:w-[156px]"
+                  className="w-14 rounded-[40px] sm:w-20 md:w-[156px]"
                   src={handImg}
                   alt="img"
                 />
               </div>
             </div>
-            <div className="w-10/12 md:ps-2.5 mt-6 lg:mt-0">
+            <div className="wf lg:w-10/12 md:ps-2.5 mt-6 lg:mt-0">
               <div className="flex flex-col justify-center h-full">
                 {heroData.map((items, index) => (
                   <div
@@ -49,10 +49,10 @@ const Hero = () => {
                       index === 0 ? "" : "mt-6 xl:mt-16"
                     }`}
                   >
-                    <h2 className="ff_vardana_bold text-2xl md:text-3xl xl:text-4xl text-[#740000]">
+                    <h2 className="ff_vardana_bold text-xl md:text-3xl xl:text-4xl text-[#740000]">
                       {items.heading}
                     </h2>
-                    <p className="font-bold ff_vardana_bold text-xl md:text-2xl xl:text-[28px] text-black">
+                    <p className="font-bold ff_vardana_bold text-base md:text-2xl xl:text-[28px] text-black w-full">
                       {items.description}
                     </p>
                   </div>

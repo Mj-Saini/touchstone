@@ -1,5 +1,11 @@
 import cameraImg from "../../assets/images/svg/camera-img.svg";
 import gallryImg from "../../assets/images/svg/gallary-img.svg";
+import brushimg from "../../assets/images/svg/brush-img.svg";
+import aTozImg from "../../assets/images/svg/a-z-img.svg";
+import searchImg from "../../assets/images/svg/search-img.svg";
+import globeImg from "../../assets/images/svg/globe-img.svg";
+import chatImg from "../../assets/images/svg/chat-img.svg";
+import colorImg from "../../assets/images/svg/color-img.svg";
 
 export const sideBarData = [
   {
@@ -7,6 +13,24 @@ export const sideBarData = [
   },
   {
     icon: gallryImg,
+  },
+  {
+    icon: brushimg,
+  },
+  {
+    icon: aTozImg,
+  },
+  {
+    icon: searchImg,
+  },
+  {
+    icon: globeImg,
+  },
+  {
+    icon: chatImg,
+  },
+  {
+    icon: colorImg,
   },
 ];
 export const heroData = [
