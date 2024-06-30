@@ -2,18 +2,26 @@ import React from "react";
 import logo from "../assets/images/svg/logo.svg";
 import handImg from "../assets/images/png/hand-img.png";
 import { heroData } from "./common/Helper";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div>
+    <div className="pt-5">
       <div className="flex flex-col items-center gap-4">
-        <img src={logo} alt="logo" />
+        <img
+          className="w-[200px] sm:w-[300px] md:w-[400px] lg:w-[574px]"
+          src={logo}
+          alt="logo"
+        />
         <h2 className="font-normal text-2xl sm:text-3xl lg:text-[38px] bg-[#CCBFAB38] w-full text-center py-6 capitalize">
           Empowering the Saints
         </h2>
-        <button className="font-normal text-xl md:text-2xl lg:text-[32px] text-[#32312D] capitalize py-2 px-[22px] border border-black shadow-drop_shadow rounded-[20px] bg-[#CCBFABBF] my-10">
+        <Link
+          to="/chapter-1"
+          className="font-normal text-xl md:text-2xl lg:text-[32px] text-[#32312D] capitalize py-2 px-[22px] border border-black shadow-drop_shadow rounded-[20px] bg-[#CCBFABBF] my-10"
+        >
           Read The Bible
-        </button>
+        </Link>
         <div className="bg-hero-bg bg-cover bg-center bg-no-repeat">
           <div className="flex flex-col lg:flex-row px-4 sm:px-10 lg:ps-[139px] lg:pe-10 sm:pt-9 pb-14">
             <div className="w-full lg:w-[191px] md:pe-2.5">

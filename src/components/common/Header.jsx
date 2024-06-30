@@ -9,7 +9,7 @@ const Header = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
   return (
     <>
-      <div className="sticky top-0">
+      <div className="sticky top-0 bg-[#E7E6E2]">
         <div
           className={`fixed z-40 duration-300 ${
             openSidebar ? "left-0" : "-left-[160px]"
@@ -20,7 +20,7 @@ const Header = () => {
         <div className="flex justify-between">
           <img
             onClick={() => setOpenSidebar(true)}
-            className="-mb-10 ms-5 w-14 md:w-[105px]"
+            className="-mb-10 ms-5 w-14 md:w-[105px] cursor-pointer"
             src={fingerImg}
             alt="img"
           />

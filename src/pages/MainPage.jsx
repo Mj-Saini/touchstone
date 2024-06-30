@@ -5,7 +5,7 @@ import Discover from "../components/Discover";
 
 const MainPage = () => {
   return (
-    <div className="bg-[#E7E6E2]">
+    <div className="bg-[#E7E6E2] overflow-hidden">
       <Hero />
       <TouchstoneStudy />
       <Discover />

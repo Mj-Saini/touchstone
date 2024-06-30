@@ -5,8 +5,13 @@ import printImg from "../../assets/images/svg/fingerprints.svg";
 const SideBar = ({ setOpenSidebar }) => {
   return (
     <div id="sidebar" className=" top-0 sticky ">
-      <div className="flex flex-col bg-[#CCBFABBF] shadow-drop_shadow rounded-[20px] h-full w-24 md:w-[169px] justify-center px-5 md:px-8 py-5 md:py-[35px] gap-3 md:gap-[30px] ">
-        <img onClick={() => setOpenSidebar(false)} src={printImg} alt="img" />
+      <div className="flex flex-col bg-[#CCBFAB] shadow-drop_shadow rounded-[20px] h-full w-24 md:w-[169px] justify-center px-5 md:px-8 py-5 md:py-[35px] gap-3 md:gap-[30px] ">
+        <img
+          onClick={() => setOpenSidebar(false)}
+          className="cursor-pointer"
+          src={printImg}
+          alt="img"
+        />
         {sideBarData.map((item, index) => (
           <div key={index}>
             <Link
