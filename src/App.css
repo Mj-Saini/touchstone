@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Verdana';
+  src: url('./assets/fonts/verdana.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Verdana-bold';
+  src: url('./assets/fonts/verdana-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Verdana', sans-serif;
+  background: #E7E6E2;
+}
+
+.ff_vardana_bold {
+  font-family: 'Verdana-bold', sans-serif;
+}
