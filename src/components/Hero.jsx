@@ -17,7 +17,7 @@ const Hero = () => {
           Empowering the Saints
         </h2>
         <Link
-          to="/chapter-1"
+          to="/macbook-air"
           className="font-normal text-xl md:text-2xl lg:text-[32px] text-[#32312D] capitalize py-2 px-[22px] border border-black shadow-drop_shadow rounded-[20px] bg-[#CCBFABBF] my-6 lg:my-10"
         >
           Read The Bible

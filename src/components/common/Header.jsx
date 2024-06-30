@@ -12,7 +12,7 @@ const Header = () => {
       <div className="sticky top-0 bg-[#E7E6E2]">
         <div
           className={`fixed z-40 duration-300 ${
-            openSidebar ? "left-0" : "-left-[160px]"
+            openSidebar ? "left-0" : "-left-full"
           }`}
         >
           <SideBar setOpenSidebar={setOpenSidebar} />

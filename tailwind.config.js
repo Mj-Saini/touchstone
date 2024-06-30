@@ -12,6 +12,7 @@ module.exports = {
       backgroundImage: {
         "hero-bg": "url('/src/assets/images/png/hero img.png')",
         discover_bg: "url('/src/assets/images/png/bg-book.png')",
+        macbook_bg: "url('/src/assets/images/png/macbook-img.png')",
         support_mission:
           "url('/src/assets/images/png/support-our-mission-bg.png')",
       },
