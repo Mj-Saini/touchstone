@@ -11,8 +11,10 @@ const MacBookAir = () => {
       </h2>
       <div className="flex flex-col">
         <div className="max-w-[592px] py-5 px-7 bg-[#E7E6E2C9] rounded-tr-[41px]  rounded-bl-[41px] mt-6 md:mt-12">
-          <h2>DESCRIPTION</h2>
-          <p className="text-black text-base md:text-xl lg:text-[22px] lg:!leading-[30px]">
+          <h2 className="text-[#740000]  text-xl md:text-2xl text-[30px] ff_vardana_bold">
+            DESCRIPTION
+          </h2>
+          <p className="text-black text-base md:text-xl lg:text-[22px] lg:!leading-[30px] mt-3">
             The King James Version (KJV), also the King James Bible (KJB) and
             the Authorized Version, is an Early Modern English translation of
             the Christian Bible for the Church of England, which was

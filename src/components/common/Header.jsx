@@ -17,10 +17,10 @@ const Header = ({ decreaseFontSize, increaseFontSize }) => {
         >
           <SideBar setOpenSidebar={setOpenSidebar} />
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-end sm:justify-between">
           <img
             onClick={() => setOpenSidebar(true)}
-            className="-mb-10 ms-5 w-14 md:w-[105px] cursor-pointer"
+            className="-mb-10 ms-5 w-14 md:w-[105px] cursor-pointer hidden sm:flex"
             src={fingerImg}
             alt="img"
           />
