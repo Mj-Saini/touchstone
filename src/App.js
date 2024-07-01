@@ -3,17 +3,17 @@ import "./App.css";
 import Chapter1Page from "./pages/Chapter1Page";
 import MainPage from "./pages/MainPage";
 import MacBookAir from "./components/MacBookAir";
+import AuthForm from "./components/AuthForm";
 
 function App() {
   return (
     <div className=" bg-[#E7E6E2]">
       <Routes>
-        <Route path="/" element={<MainPage />} />
+        <Route path="/" element={<AuthForm />} />
+        <Route path="/main-page" element={<MainPage />} />
         <Route path="/chapter-1" element={<Chapter1Page />} />
         <Route path="/macbook-air" element={<MacBookAir />} />
       </Routes>
-
-      
     </div>
   );
 }

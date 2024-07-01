@@ -1,13 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import { chapter1Data } from "./../components/common/Helper";
 import Paginations from "../components/common/Paginations";
 import Header from "../components/common/Header";
 
 const Chapter1Page = () => {
+  const [textStyle, setTextStyle] = useState({
+    fontSize: 16, // initial font size
+    lineHeight: 1.5, // initial line height
+  });
+
+  const updateTextStyle = (newStyles) => {
+    setTextStyle((prevState) => ({
+      ...prevState,
+      ...newStyles,
+    }));
+  };
+
+  const increaseFontSize = () => {
+    updateTextStyle({ lineHeight: Math.min(textStyle.lineHeight + 0.1, 2) });
+    updateTextStyle({ fontSize: Math.min(textStyle.fontSize + 2, 32) });
+  };
+
+  const decreaseFontSize = () => {
+    updateTextStyle({ fontSize: Math.max(textStyle.fontSize - 2, 12) });
+    updateTextStyle({ lineHeight: Math.max(textStyle.lineHeight - 0.1, 1) });
+  };
+
   let globalIndex = 1;
   return (
     <div className="">
-      <Header />
+      <Header
+        increaseFontSize={increaseFontSize}
+        decreaseFontSize={decreaseFontSize}
+       
+      />
       <div className="px-5 sm:px-10 lg:ps-[185px] lg:pe-[29px] w-full mt-5">
         {chapter1Data.map((items, index) => (
           <div className="w-full flex flex-col items-center sm:items-start">
@@ -21,11 +47,25 @@ const Chapter1Page = () => {
             >
               {items.about.map((data, index) => (
                 <div key={index} className={`flex gap-3 w-full mt-3`}>
-                  <span className="text-base md:text-[25px] text-black flex justify-end w-7 sm:w-11">
+                  <span
+                    style={{
+                      fontSize: `${textStyle.fontSize}px`,
+                      lineHeight: `${textStyle.lineHeight}`,
+                    }}
+                    className="text-base md:text-[25px] text-black flex
+                    justify-end w-7 sm:w-11"
+                  >
                     {globalIndex++}.
                   </span>
 
-                  <p className="text-base md:text-[25px] text-black w-full whitespace-normal md:!leading-[30px]">
+                  <p
+                    style={{
+                      fontSize: `${textStyle.fontSize}px`,
+                      lineHeight: `${textStyle.lineHeight}`,
+                    }}
+                    className="text-base md:text-[25px] text-black w-full
+                    whitespace-normal md:!leading-[30px]"
+                  >
                     {data.description}
                   </p>
                 </div>

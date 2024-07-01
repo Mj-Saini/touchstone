@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import BookChapterPopup from "./BookChapterPopup";
 
 const MacBookAir = () => {
+  const [openPopup, setOpenPopup] = useState(false);
   return (
     <div className="bg-macbook_bg bg-cover bg-top bg-no-repeat py-6 lg:py-[54px] px-6 sm:px-12 lg:px-[82px]">
       <h2 className="ff_vardana_bold text-2xl md:text-5xl lg:text-[68px] text-[#393F62]">
@@ -23,12 +25,13 @@ const MacBookAir = () => {
             [Wikipedia].
           </p>
         </div>
-        <Link
-          to="/chapter-1"
+        <button
+          onClick={() => setOpenPopup(true)}
           className="font-normal text-xl md:text-2xl lg:text-[32px] text-[#740000] capitalize py-2 px-[22px] max-w-[592px] flex justify-center shadow-drop_shadow rounded-[20px] bg-[#E7E6E2C9] my-6 lg:my-10"
         >
           Read The Book
-        </Link>
+        </button>
+        {openPopup && <BookChapterPopup setOpenPopup={setOpenPopup} />}
       </div>
     </div>
   );
