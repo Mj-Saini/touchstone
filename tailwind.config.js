@@ -4,7 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        theme_color: "#393F62",
+        darkTheme: {
+          background: "#393F62",
+          text: "#FFFFFF",
+        },
+        lightTheme: {
+          background: "#FFFFFF",
+          text: "#000000",
+        },
       },
       boxShadow: {
         drop_shadow: "0px 4px 4px 0px #0000005E",

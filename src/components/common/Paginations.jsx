@@ -5,7 +5,7 @@ import CommonPopup from "../CommonPopup";
 import archologyImage from "../../assets/images/png/archology-img.png";
 import mapImage from "../../assets/images/png/map-img.png";
 
-const Paginations = () => {
+const Paginations = ({ isDarkTheme }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   if (isPopupOpen) {
     document.body.style.overflow = "hidden";
@@ -21,11 +21,24 @@ const Paginations = () => {
       <div className="flex justify-between items-center md:py-4">
         <button className="text-[#740000] font-normal text-base md:text-3xl lg:text-[32px] flex items-center ">
           <PreviousIcon />
-          <span className="hidden sm:inline ">Previous Chapter</span>
+          <span
+            className={`hidden sm:inline ${
+              !isDarkTheme ? "text-[#CCBFAB]" : "text-[#393F62]"
+            }`}
+          >
+            Previous Chapter
+          </span>
         </button>
 
         <button className="text-[#740000] font-normal text-base md:text-3xl lg:text-[32px] flex items-center">
-          <span className="hidden sm:block"> Next Chapter</span>
+          <span
+            className={`hidden sm:inline ${
+              !isDarkTheme ? "text-[#CCBFAB]" : "text-[#393F62]"
+            }`}
+          >
+            {" "}
+            Next Chapter
+          </span>
 
           <NextIcon />
         </button>
@@ -33,7 +46,11 @@ const Paginations = () => {
       <div className="bg-support_mission bg-cover bg-center bg-no-repeat flex justify-center md:py-6 sm:mt-6">
         <button
           onClick={handleOpenPopup}
-          className="text-normal text-xl md:text-2xl lg:text-[32px] text-[#740000] capitalize border border-[#740000] px-5 py-4 rounded-xl "
+          className={`text-normal text-xl md:text-2xl lg:text-[32px] text-[#740000] capitalize border  px-5 py-4 rounded-xl ${
+            !isDarkTheme
+              ? "text-[#CCBFAB] border-[#CCBFAB]"
+              : "text-[#393F62] border-[#740000]"
+          }`}
         >
           Support our mission
         </button>
