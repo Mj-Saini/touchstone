@@ -10,8 +10,9 @@ const Header = ({
   increaseFontSize,
   toggleTheme,
   isDarkTheme,
+  openSidebar,
+  setOpenSidebar,
 }) => {
-  const [openSidebar, setOpenSidebar] = useState(false);
   return (
     <>
       <div

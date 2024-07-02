@@ -4,6 +4,8 @@ import Paginations from "../components/common/Paginations";
 import Header from "../components/common/Header";
 
 const Chapter1Page = () => {
+  const [openSidebar, setOpenSidebar] = useState(false);
+
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   const [textStyle, setTextStyle] = useState({
     fontSize: 24,
@@ -49,8 +51,14 @@ const Chapter1Page = () => {
         toggleTheme={toggleTheme}
         increaseFontSize={increaseFontSize}
         decreaseFontSize={decreaseFontSize}
+        setOpenSidebar={setOpenSidebar}
+        openSidebar={openSidebar}
       />
-      <div className="px-5 sm:px-10 w-full sm:w-11/12 md:w-[80%] lg:w-[88%] ms-auto lg:pe-[29px] mt-5">
+      <div
+        className={`px-5 sm:px-10  ms-auto lg:pe-[29px] mt-5 duration-300 ${
+          openSidebar ? "w-full sm:w-11/12 md:w-[80%] lg:w-[88%]" : "w-full"
+        }`}
+      >
         {chapter1Data.map((items, index) => (
           <div className="w-full flex flex-col items-center sm:items-start">
             <h2
@@ -98,7 +106,7 @@ const Chapter1Page = () => {
           </div>
         ))}
       </div>
-      <Paginations isDarkTheme={isDarkTheme} />
+      <Paginations isDarkTheme={isDarkTheme} openSidebar={openSidebar} />
     </div>
   );
 };
