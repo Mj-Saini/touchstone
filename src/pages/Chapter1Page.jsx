@@ -6,8 +6,8 @@ import Header from "../components/common/Header";
 const Chapter1Page = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   const [textStyle, setTextStyle] = useState({
-    fontSize: 16, // initial font size
-    lineHeight: 1.5, // initial line height
+    fontSize: 24,
+    lineHeight: 1.5,
   });
 
   const updateTextStyle = (newStyles) => {
@@ -18,8 +18,8 @@ const Chapter1Page = () => {
   };
 
   const increaseFontSize = () => {
-    updateTextStyle({ lineHeight: Math.min(textStyle.lineHeight + 0.1, 2) });
-    updateTextStyle({ fontSize: Math.min(textStyle.fontSize + 2, 32) });
+    updateTextStyle({ lineHeight: Math.min(textStyle.lineHeight + 0.4, 30) });
+    updateTextStyle({ fontSize: Math.min(textStyle.fontSize + 2, 64) });
   };
 
   const decreaseFontSize = () => {
@@ -46,7 +46,7 @@ const Chapter1Page = () => {
         increaseFontSize={increaseFontSize}
         decreaseFontSize={decreaseFontSize}
       />
-      <div className="px-5 sm:px-10 lg:ps-[185px] lg:pe-[29px] w-full mt-5">
+      <div className="px-5 sm:px-10 w-full sm:w-11/12 md:w-[80%] lg:w-[88%] ms-auto lg:pe-[29px] mt-5">
         {chapter1Data.map((items, index) => (
           <div className="w-full flex flex-col items-center sm:items-start">
             <h2
@@ -93,8 +93,8 @@ const Chapter1Page = () => {
             </div>
           </div>
         ))}
+        <Paginations isDarkTheme={isDarkTheme} />
       </div>
-      <Paginations isDarkTheme={isDarkTheme} />
     </div>
   );
 };

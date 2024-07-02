@@ -1,14 +1,14 @@
 // src/components/AuthForm.js
 import React, { useState } from "react";
 import userImg from "../assets/images/svg/user.svg";
-import emailImg from "../assets/images/svg/user.svg";
-import passwordImg from "../assets/images/svg/user.svg";
+import emailImg from "../assets/images/svg/email.svg";
+import passwordImg from "../assets/images/svg/password.svg";
 import googleImg from "../assets/images/svg/google-icon.svg";
 import fbImg from "../assets/images/svg/fb-icon.svg";
 import inImg from "../assets/images/svg/linkdin.svg";
 import logo from "../assets/images/svg/logo.svg";
 import bibleText from "../assets/images/svg/bible-logo.svg";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const AuthForm = () => {
   const navigate = useNavigate();
@@ -75,7 +75,7 @@ const AuthForm = () => {
 
         {/* Create Account Section */}
         <div className="w-full md:w-3/5 flex flex-col items-center">
-          <div className="flex justify-end w-full mb-6 lg:mb-16 py-3">
+          <div className="flex justify-end w-full mb-5 lg:mb-12 py-3">
             <div className="flex items-end flex-col px-5 sm:px-[29px]">
               <img className=" w-[150px] md:w-[251px]" src={logo} alt="logo" />
               <img className=" w-14 md:w-[79px]" src={bibleText} alt="logo" />
@@ -84,23 +84,23 @@ const AuthForm = () => {
           <h2 className="text-2xl md:text-4xl lg:text-[43px] text-black">
             {isSignUp ? "CREATE ACCOUNT" : "SIGN IN"}
           </h2>
-          <div className="w-full md:max-w-[404px] mt-6">
-            <div className="flex justify-center gap-5 mb-6 md:mb-[52px]">
-              <span className="flex justify-center items-center w-[67px] h-[67px] rounded-[16px] border border-black">
+          <div className="w-full md:max-w-[404px] mt-5">
+            <div className="flex justify-center gap-5 mb-5">
+              <span className="flex justify-center items-center w-[50px] h-[50px] rounded-[16px] border border-black">
                 <a href="https://www.google.com" target="_black">
-                  <img src={googleImg} alt="google-icon" />
+                  <img className="w-[30px]" src={googleImg} alt="google-icon" />
                 </a>
               </span>
-              <span className="flex justify-center items-center w-[67px] h-[67px] rounded-[16px] border border-black">
+              <span className="flex justify-center items-center w-[50px] h-[50px] rounded-[16px] border border-black">
                 <a href="https://www.facebook.com" target="_black">
                   {" "}
-                  <img src={fbImg} alt="google-icon" />
+                  <img className="w-[30px]" src={fbImg} alt="google-icon" />
                 </a>
               </span>
-              <span className="flex justify-center items-center w-[67px] h-[67px] rounded-[16px] border border-black">
+              <span className="flex justify-center items-center w-[50px] h-[50px] rounded-[16px] border border-black">
                 <a href="https://www.linkdin.com" target="_black">
                   {" "}
-                  <img src={inImg} alt="google-icon" />
+                  <img className="w-[30px]" src={inImg} alt="google-icon" />
                 </a>
               </span>
             </div>
@@ -109,7 +109,7 @@ const AuthForm = () => {
             </p>
             <form
               onSubmit={handleSubmit}
-              className="flex flex-col gap-5 justify-center items-center rounded px-8 pt-3 pb-8"
+              className="flex flex-col gap-4 justify-center items-center rounded px-8 pt-3 pb-8"
             >
               {isSignUp && (
                 <div className="flex gap-3 md:gap-5 border border-black rounded-[16px] px-5 w-full">
@@ -154,7 +154,7 @@ const AuthForm = () => {
               </div>
               {isSignUp && (
                 <div className="flex gap-3 md:gap-5 border border-black rounded-[16px] px-5 w-full">
-                  <img src={userImg} alt="user-icon" />
+                  <img src={passwordImg} alt="user-icon" />
                   <input
                     className="text-base md:text-lg text-black border-none outline-none w-full bg-transparent placeholder:text-black  py-3  "
                     id="reconfirm password"
@@ -167,7 +167,7 @@ const AuthForm = () => {
                   />
                 </div>
               )}
-              <div className="flex items-center justify-between mt-4">
+              <div className="flex items-center justify-between mt-2">
                 <button
                   className="text-black text-lg sm:text-xl lg:text-[23px] border border-black px-[60px] py-2.5 rounded-xl shadow-drop_shadow"
                   type="submit"

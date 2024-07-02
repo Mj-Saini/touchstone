@@ -11,7 +11,7 @@ const Footer = () => {
           src={logo}
           alt="logo"
         />
-        <h2 className="font-normal text-2xl sm:text-3xl lg:text-[38px]  w-full text-center py-4 capitalize">
+        <h2 className="font-normal text-2xl sm:text-3xl lg:text-[38px]  w-full text-center py-4 capitalize mb-2">
           Empowering the Saints
         </h2>
         <div className="flex flex-wrap justify-center lg:justify-between w-full lg:border border-black px-6  md:px-[51px]">

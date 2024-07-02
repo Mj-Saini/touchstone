@@ -2,7 +2,7 @@ export const PreviousIcon = () => {
   return (
     <>
       <svg
-        className="w-14 sm:w-20 md-w-24 lg:w-[148px]"
+        className="w-14 sm:w-16 md:w-20 lg:w-[100px]"
         xmlns="http://www.w3.org/2000/svg"
         width="148"
         height="148"
@@ -20,7 +20,7 @@ export const NextIcon = () => {
   return (
     <>
       <svg
-        className="w-14 sm:w-20 md:w-24 lg:w-[148px]"
+        className="w-14 sm:w-16 md:w-20 lg:w-[100px]"
         xmlns="http://www.w3.org/2000/svg"
         width="148"
         height="148"

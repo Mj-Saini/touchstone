@@ -1,6 +1,9 @@
 import React from "react";
 import logo from "../assets/images/svg/logo.svg";
 import handImg from "../assets/images/png/hand-img.png";
+import studyTool from "../assets/images/svg/study-tool-img.svg";
+import computerImg from "../assets/images/svg/computer-img.svg";
+import resources from "../assets/images/svg/resources-img.svg";
 import { heroData } from "./common/Helper";
 import { Link } from "react-router-dom";
 
@@ -33,17 +36,17 @@ const Hero = () => {
                 />
                 <img
                   className="w-14 rounded-[40px] sm:w-20 md:w-[156px]"
-                  src={handImg}
+                  src={studyTool}
                   alt="img"
                 />
                 <img
                   className="w-14 rounded-[40px] sm:w-20 md:w-[156px]"
-                  src={handImg}
+                  src={computerImg}
                   alt="img"
                 />
                 <img
                   className="w-14 rounded-[40px] sm:w-20 md:w-[156px]"
-                  src={handImg}
+                  src={resources}
                   alt="img"
                 />
               </div>
@@ -60,7 +63,7 @@ const Hero = () => {
                     <h2 className="ff_vardana_bold text-xl md:text-3xl xl:text-4xl text-[#740000]">
                       {items.heading}
                     </h2>
-                    <p className="font-bold ff_vardana_bold text-base md:text-2xl xl:text-[28px] text-black w-full">
+                    <p className="text-base md:text-2xl xl:text-[28px] text-black w-full">
                       {items.description}
                     </p>
                   </div>

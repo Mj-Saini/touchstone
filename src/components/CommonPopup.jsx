@@ -50,7 +50,7 @@ const CommonPopup = ({
           <img
             src={imageSrc}
             alt={subtitle}
-            className={` ${imgStyling}${imgDisplay} rounded-lg`}
+            className={` ${imgStyling} ${imgDisplay} object-cover rounded-lg`}
           />
         </div>
         <div

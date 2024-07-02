@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { NextIcon, PreviousIcon } from "./Icons";
 import CommonPopup from "../CommonPopup";
 import archologyImage from "../../assets/images/png/archology-img.png";
-import mapImage from "../../assets/images/png/map-img.png";
 
 const Paginations = ({ isDarkTheme }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -17,7 +16,7 @@ const Paginations = ({ isDarkTheme }) => {
   const handleClosePopup = () => setIsPopupOpen(false);
 
   return (
-    <div className=" sm:mt-8 pb-6 sm:pb-10 md:pb-[66px] mb-20">
+    <div className="mb-20 sm:mb-0 pb-6 sm:pb-10 md:pb-[66px]">
       <div className="flex justify-between items-center md:py-4">
         <button className="text-[#740000] font-normal text-base md:text-3xl lg:text-[32px] flex items-center ">
           <PreviousIcon />
@@ -43,19 +42,21 @@ const Paginations = ({ isDarkTheme }) => {
           <NextIcon />
         </button>
       </div>
-      <div className="bg-support_mission bg-cover bg-center bg-no-repeat flex justify-center md:py-6 sm:mt-6">
-        <button
-          onClick={handleOpenPopup}
-          className={`text-normal text-xl md:text-2xl lg:text-[32px] text-[#740000] capitalize border  px-5 py-4 rounded-xl ${
-            !isDarkTheme
-              ? "text-[#CCBFAB] border-[#CCBFAB]"
-              : "text-[#393F62] border-[#740000]"
-          }`}
-        >
-          Support our mission
-        </button>
+      <div className="bg-[#CCBFAB38s] py-3">
+        <div className="bg-support_mission bg-cover bg-center bg-no-repeat flex justify-center md:py-6 sm:mt-6">
+          <button
+            onClick={handleOpenPopup}
+            className={`text-normal text-xl md:text-2xl lg:text-[32px] text-[#740000] capitalize border  px-5 py-4 rounded-xl ${
+              !isDarkTheme
+                ? "text-[#CCBFAB] border-[#CCBFAB]"
+                : "text-[#393F62] border-[#740000]"
+            }`}
+          >
+            Support our mission
+          </button>
+        </div>
       </div>
-      <CommonPopup
+      {/* <CommonPopup
         isOpen={isPopupOpen}
         onClose={handleClosePopup}
         title="ENCYCLOPEDIA"
@@ -65,7 +66,7 @@ const Paginations = ({ isDarkTheme }) => {
         }
         imgDisplay="hidden"
         popupStyling="max-w-[759px] lg:w-[759px]"
-      />
+      /> */}
       {/* <CommonPopup
         isOpen={isPopupOpen}
         onClose={handleClosePopup}
@@ -75,17 +76,16 @@ const Paginations = ({ isDarkTheme }) => {
         popupStyling="max-w-[759px] lg:w-[759px]"
         textDisplay="hidden"
       /> */}
-      {/* <CommonPopup
+      <CommonPopup
         isOpen={isPopupOpen}
         onClose={handleClosePopup}
-        // title="ARCHEOLOGY"
-        // subtitle="Shekels"
+        title="ARCHEOLOGY"
+        subtitle="Shekels"
         imageSrc={archologyImage}
-        // popupStyling=" max-w-[555px] lg:w-[555px]"
-        // imgStyling="w-[361px] sm:h-[558px]"
+        popupStyling=" max-w-[555px] lg:w-[555px]"
+        imgStyling="w-[361px] sm:h-[458px]"
         textDisplay="hidden"
-
-      /> */}
+      />
     </div>
   );
 };
