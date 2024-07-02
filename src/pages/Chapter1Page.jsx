@@ -93,8 +93,8 @@ const Chapter1Page = () => {
             </div>
           </div>
         ))}
-        <Paginations isDarkTheme={isDarkTheme} />
       </div>
+      <Paginations isDarkTheme={isDarkTheme} />
     </div>
   );
 };

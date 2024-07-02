@@ -20,7 +20,7 @@ const Footer = () => {
               <h2 className="ff_vardana_bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#740000] uppercase">
                 LOCATION
               </h2>
-              <p className="ff_vardana_bold text-lg md:text-2xl lg:text-[28px]">
+              <p className=" text-lg md:text-xl lg:text-2xl">
                 123 Hypothetical street New Braunfels, TX 123456
               </p>
             </div>
@@ -30,16 +30,16 @@ const Footer = () => {
               <h2 className="ff_vardana_bold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#740000] uppercase">
                 CONTACT
               </h2>
-              <p>
+              <p className="flex flex-col">
                 <a
                   href="mailto:contact@touchstone.com"
-                  className="ff_vardana_bold text-lg md:text-2xl lg:text-[28px] whitespace-wrap"
+                  className=" text-base md:text-xl lg:text-2xl whitespace-wrap"
                 >
                   contact@touchstone.com
                 </a>{" "}
                 <a
                   href="tel:(555) 555-5555"
-                  className="ff_vardana_bold text-lg md:text-2xl lg:text-[28px]"
+                  className=" text-base md:text-xl lg:text-2xl"
                 >
                   (555) 555-5555
                 </a>

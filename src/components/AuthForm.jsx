@@ -56,21 +56,22 @@ const AuthForm = () => {
   return (
     <div className="flex min-h-screen items-center justify-center ">
       <div className="flex flex-wrap w-full grow">
-        <div className="w-full md:w-2/5 bg-[#CCBFABCC] md:rounded-r-[52px] p-8 flex flex-col items-center justify-center">
-          <h2 className="text-black text-2xl md:text-3xl lg:text-[43px] pb-4 md:pb-[38px] text-center uppercase">
-            WELCOME BACK!
-          </h2>
-          <p className="mb-8 text-center font-normal text-lg md:text-[22px] text-black">
-            To continue reading the Bible with us, please login with your
-            personal information.
-          </p>
-
-          <button
-            onClick={toggleForm}
-            className="text-black text-lg sm:text-xl lg:text-[23px] border border-black px-[60px] py-2.5 rounded-xl shadow-drop_shadow"
-          >
-            {!isSignUp ? "SIGN UP" : "SIGN IN"}
-          </button>
+        <div className="w-full md:w-2/5  flex items-center">
+          <div className="bg-[#CCBFABCC] md:rounded-r-[52px] p-8 flex flex-col items-center justify-center md:h-[665px]">
+            <h2 className="text-black text-2xl md:text-3xl lg:text-[43px] pb-4 md:pb-[38px] text-center uppercase">
+              WELCOME BACK!
+            </h2>
+            <p className="mb-8 text-center font-normal text-lg md:text-[22px] text-black">
+              To continue reading the Bible with us, please login with your
+              personal information.
+            </p>
+            <button
+              onClick={toggleForm}
+              className="text-black text-lg sm:text-xl lg:text-[23px] border border-black px-[60px] py-2.5 rounded-xl shadow-drop_shadow"
+            >
+              {!isSignUp ? "SIGN UP" : "SIGN IN"}
+            </button>
+          </div>
         </div>
 
         {/* Create Account Section */}
