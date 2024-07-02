@@ -18,7 +18,7 @@ const Paginations = ({ isDarkTheme }) => {
   return (
     <div className="mb-20 sm:mb-0 pb-6 sm:pb-10 md:pb-[66px]">
       <div className="flex justify-between items-center md:py-4  w-full sm:w-11/12 md:w-[80%] lg:w-[88%] ms-auto px-10">
-        <button className="text-[#740000] font-normal text-base md:text-3xl lg:text-[32px] flex items-center ">
+        <button className="text-[#740000] font-normal text-base md:text-xl lg:text-[32px] flex items-center ">
           <PreviousIcon />
           <span
             className={`hidden sm:inline ${
@@ -29,7 +29,7 @@ const Paginations = ({ isDarkTheme }) => {
           </span>
         </button>
 
-        <button className="text-[#740000] font-normal text-base md:text-3xl lg:text-[32px] flex items-center">
+        <button className="text-[#740000] font-normal text-base md:text-xl lg:text-[32px] flex items-center">
           <span
             className={`hidden sm:inline ${
               !isDarkTheme ? "text-[#CCBFAB]" : "text-[#393F62]"
