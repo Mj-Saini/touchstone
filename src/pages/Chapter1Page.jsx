@@ -18,13 +18,17 @@ const Chapter1Page = () => {
   };
 
   const increaseFontSize = () => {
-    updateTextStyle({ lineHeight: Math.min(textStyle.lineHeight + 0.4, 3) });
-    updateTextStyle({ fontSize: Math.min(textStyle.fontSize + 2, 36) });
+    updateTextStyle({
+      fontSize: Math.min(textStyle.fontSize + 2, 36),
+      lineHeight: Math.min(textStyle.lineHeight + 0.1, 1.5),
+    });
   };
 
   const decreaseFontSize = () => {
-    updateTextStyle({ fontSize: Math.max(textStyle.fontSize - 2, 12) });
-    updateTextStyle({ lineHeight: Math.max(textStyle.lineHeight - 0.1, 1) });
+    updateTextStyle({
+      fontSize: Math.max(textStyle.fontSize - 2, 12),
+      lineHeight: Math.max(textStyle.lineHeight - 0.1, 1),
+    });
   };
 
   const toggleTheme = () => {
@@ -82,7 +86,7 @@ const Chapter1Page = () => {
                       lineHeight: `${textStyle.lineHeight}`,
                     }}
                     className={`text-base md:text-[25px] text-black w-full
-                    whitespace-normal md:!leading-[30px] ${
+                    whitespace-normal md:leading-[30px] ${
                       !isDarkTheme ? "text-darkTheme-text" : "text-[#393F62]"
                     }`}
                   >
