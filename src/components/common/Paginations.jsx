@@ -16,7 +16,7 @@ const Paginations = ({ isDarkTheme }) => {
   const handleClosePopup = () => setIsPopupOpen(false);
 
   return (
-    <div className="mb-20 sm:mb-0 pb-6 sm:pb-10 md:pb-[66px]">
+    <div>
       <div className="flex justify-between items-center md:py-4  w-full sm:w-11/12 md:w-[80%] lg:w-[88%] ms-auto px-10">
         <button className="text-[#740000] font-normal text-base md:text-xl lg:text-[32px] flex items-center ">
           <PreviousIcon />
@@ -42,7 +42,7 @@ const Paginations = ({ isDarkTheme }) => {
           <NextIcon />
         </button>
       </div>
-      <div className="bg-[#CCBFAB38s] py-3">
+      <div className="bg-[#CCBFAB38s] -3">
         <div className="bg-support_mission bg-cover bg-center bg-no-repeat flex justify-center md:py-6 sm:mt-6">
           <button
             onClick={handleOpenPopup}
