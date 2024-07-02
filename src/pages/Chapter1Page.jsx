@@ -18,8 +18,8 @@ const Chapter1Page = () => {
   };
 
   const increaseFontSize = () => {
-    updateTextStyle({ lineHeight: Math.min(textStyle.lineHeight + 0.4, 30) });
-    updateTextStyle({ fontSize: Math.min(textStyle.fontSize + 2, 64) });
+    updateTextStyle({ lineHeight: Math.min(textStyle.lineHeight + 0.4, 3) });
+    updateTextStyle({ fontSize: Math.min(textStyle.fontSize + 2, 36) });
   };
 
   const decreaseFontSize = () => {
