@@ -55,9 +55,7 @@ const Header = ({
             />
             <h2
               className={`text-lg lg:text-[26px] text-[#740000] whitespace-nowrap  ${
-                !isDarkTheme
-                  ? "text-[#CCC1AF] bg-[#595B72]"
-                  : "text-[#393F62] bg-[#CCBFAB38]"
+                !isDarkTheme ? "text-[#CCC1AF]" : "text-[#393F62]"
               }`}
             >
               Chapter 1

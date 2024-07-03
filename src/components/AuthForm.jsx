@@ -35,7 +35,7 @@ const AuthForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (isSignUp) {
+    if (isSignUp) { 
       if (formData.password !== formData.confirmPassword) {
         console.log("Passwords do not match!");
         return;

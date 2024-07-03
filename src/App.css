@@ -36,3 +36,8 @@ input:-webkit-autofill:active {
 ::-webkit-scrollbar {
   display: none !important;
 }
+.print_img{
+  background-image: url("./assets/images/png/finger.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

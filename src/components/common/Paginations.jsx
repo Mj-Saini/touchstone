@@ -16,8 +16,8 @@ const Paginations = ({ isDarkTheme }) => {
   const handleClosePopup = () => setIsPopupOpen(false);
 
   return (
-    <div>
-      <div className="bg-[#CCBFAB38s] -3">
+    <>
+      <div className="bg-[#CCBFAB38]  w-full sm:w-11/12 md:w-[80%] lg:w-[88%] ms-auto">
         <div className="bg-support_mission bg-cover bg-center bg-no-repeat flex justify-center md:py-6 sm:mt-6">
           <button
             onClick={handleOpenPopup}
@@ -61,7 +61,7 @@ const Paginations = ({ isDarkTheme }) => {
         imgStyling="w-[361px] sm:h-[458px]"
         textDisplay="hidden"
       />
-    </div>
+    </>
   );
 };
 
