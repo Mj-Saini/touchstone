@@ -4,7 +4,7 @@ import { NextIcon, PreviousIcon } from "./Icons";
 import CommonPopup from "../CommonPopup";
 import archologyImage from "../../assets/images/png/archology-img.png";
 
-const Paginations = ({ isDarkTheme, openSidebar }) => {
+const Paginations = ({ isDarkTheme }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   if (isPopupOpen) {
     document.body.style.overflow = "hidden";
@@ -18,8 +18,7 @@ const Paginations = ({ isDarkTheme, openSidebar }) => {
   return (
     <div>
       <div
-        className={`flex justify-between items-center md:py-4  ${
-          openSidebar ? "w-full sm:w-11/12 md:w-[80%] lg:w-[88%]" : "w-full"
+        className={`flex justify-between items-center md:py-4 dur ation-300  w-full sm:w-11/12 md:w-[80%] lg:w-[88%] w-full"
         } ms-auto px-10`}
       >
         <button className="text-[#740000] font-normal text-base md:text-xl lg:text-[32px] flex items-center ">
