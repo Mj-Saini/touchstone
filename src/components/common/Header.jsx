@@ -6,6 +6,7 @@ import fingerImg from "../../assets/images/svg/fingerprints.svg";
 import SideBar from "./Sidebar";
 import { ThemeIcon } from "./Icons";
 import StylingSideBar from "../StylingSideBar";
+import SystemSideBar from "../SystemSideBar";
 
 const Header = ({
   decreaseFontSize,
@@ -15,6 +16,8 @@ const Header = ({
   openSidebar,
   setOpenSidebar,
 }) => {
+  const [openStylingSidebar, setOpenStylingSidebar] = useState(false);
+
   return (
     <>
       <div
@@ -26,16 +29,24 @@ const Header = ({
           className={`fixed z-40 duration-300 left-0 
           }`}
         >
-          <SideBar />
+          <SideBar setOpenSidebar={setOpenSidebar} openSidebar={openSidebar} />
         </div>
-        <div
+        {/* <div
           className={`fixed z-40 duration-300 left-0 ${
             openSidebar ? "laft-0" : "-left-full"
           }
           }`}
         >
-          <StylingSideBar />
-        </div>
+          <StylingSideBar setOpenSidebar={setOpenSidebar} />
+        </div> */}
+        {/* <div
+          className={`fixed z-40 duration-300 left-0 ${
+            openSidebar ? "laft-0" : "-left-full"
+          }
+          }`}
+        >
+          <SystemSideBar setOpenSidebar={setOpenStylingSidebar} />
+        </div> */}
         <div className="flex justify-end sm:justify-between">
           <img
             onClick={() => setOpenSidebar(true)}
