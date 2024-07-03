@@ -31,14 +31,14 @@ const Header = ({
         >
           <SideBar setOpenSidebar={setOpenSidebar} openSidebar={openSidebar} />
         </div>
-        {/* <div
+        <div
           className={`fixed z-40 duration-300 left-0 ${
             openSidebar ? "laft-0" : "-left-full"
           }
           }`}
         >
           <StylingSideBar setOpenSidebar={setOpenSidebar} />
-        </div> */}
+        </div>
         {/* <div
           className={`fixed z-40 duration-300 left-0 ${
             openSidebar ? "laft-0" : "-left-full"
