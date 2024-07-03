@@ -5,6 +5,7 @@ import arrowImg from "../../assets/images/svg/next-prev-img.svg";
 import fingerImg from "../../assets/images/svg/fingerprints.svg";
 import SideBar from "./Sidebar";
 import { ThemeIcon } from "./Icons";
+import StylingSideBar from "../StylingSideBar";
 
 const Header = ({
   decreaseFontSize,
@@ -22,15 +23,23 @@ const Header = ({
         }`}
       >
         <div
-          className={`fixed z-40 duration-300 left-0 "
+          className={`fixed z-40 duration-300 left-0 
           }`}
         >
           <SideBar />
         </div>
+        <div
+          className={`fixed z-40 duration-300 left-0 ${
+            openSidebar ? "laft-0" : "-left-full"
+          }
+          }`}
+        >
+          <StylingSideBar />
+        </div>
         <div className="flex justify-end sm:justify-between">
           <img
             onClick={() => setOpenSidebar(true)}
-            className="-mb-10 ms-5 w-14 md:w-[105px] cursor-pointer hidden sm:flex"
+            className="-mb-10 ms-5 w-14 lg:w-[105px] cursor-pointer hidden sm:flex"
             src={fingerImg}
             alt="img"
           />

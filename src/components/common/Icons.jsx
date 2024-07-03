@@ -56,6 +56,7 @@ export const FingerPrintIcon = () => {
   return (
     <>
       <svg
+        className="w-14 md:w-[105px]"
         xmlns="http://www.w3.org/2000/svg"
         width="105px"
         height="110px"
