@@ -2,7 +2,7 @@ import { sideBarData } from "./Helper";
 import { Link } from "react-router-dom";
 import printImg from "../../assets/images/svg/fingerprints.svg";
 
-const SideBar = ({ setOpenSidebar }) => {
+const SideBar = () => {
   return (
     <div
       id="sidebar"
@@ -10,7 +10,6 @@ const SideBar = ({ setOpenSidebar }) => {
     >
       <div className="flex flex-row sm:flex-col  bg-[#CCBFAB] shadow-drop_shadow sm:rounded-[20px] h-full w-full sm:w-24 md:w-[169px] justify-center px-5 md:px-8 py-5 md:py-[35px] gap-3 md:gap-[20px]`">
         <img
-          onClick={() => setOpenSidebar(false)}
           className="cursor-pointer hidden sm:block w-[100px]"
           src={printImg}
           alt="img"
@@ -21,9 +20,6 @@ const SideBar = ({ setOpenSidebar }) => {
               <Link
                 to={item.path}
                 className="flex items-center justify-center w-full duration-300 icon cursor-pointer bg-[#CCBFABBF]"
-                onClick={() => {
-                  setOpenSidebar(false);
-                }}
               >
                 <div className="flex items-center gap-2.5">
                   <img className="w-[50px]" src={item.icon} alt="sidebar-img" />

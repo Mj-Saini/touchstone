@@ -29,9 +29,6 @@ export const sideBarData = [
   {
     icon: chatImg,
   },
-  {
-    icon: colorImg,
-  },
 ];
 export const heroData = [
   {
