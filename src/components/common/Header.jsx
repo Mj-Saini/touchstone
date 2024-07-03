@@ -19,7 +19,7 @@ const Header = ({
     <>
       <div
         className={`sticky top-0   ${
-          isDarkTheme ? "bg-[#E7E6E2]" : "bg-[#393F62]"
+          isDarkTheme ? "bg-white" : "bg-[#393F62]"
         }`}
       >
         <div
