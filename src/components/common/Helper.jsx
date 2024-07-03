@@ -10,10 +10,10 @@ import underlineImg from "../../assets/images/svg/underline.svg";
 import pensilImg from "../../assets/images/svg/edit-img.svg";
 import saveImg from "../../assets/images/svg/save.svg";
 import noteImg from "../../assets/images/svg/14.svg";
-import home from "../../assets/images/svg/14.svg";
-import user from "../../assets/images/svg/16.svg";
+import home from "../../assets/images/svg/16.svg";
+import user from "../../assets/images/svg/9.svg";
 import navigate from "../../assets/images/svg/14.svg";
-import search from "../../assets/images/svg/14.svg";
+import search from "../../assets/images/svg/search.svg";
 import fullScreen from "../../assets/images/svg/14.svg";
 import settings from "../../assets/images/svg/14.svg";
 
