@@ -17,7 +17,7 @@ const Paginations = ({ isDarkTheme }) => {
 
   return (
     <>
-      <div className="bg-[#CCBFAB38]  w-full sm:w-11/12 md:w-[80%] lg:w-[88%] ms-auto">
+      <div className="bg-[#CCBFAB38]  w-full sm:w-11/12 md:w-[80%] lg:w-[90%] ms-auto">
         <div className="bg-support_mission bg-cover bg-center bg-no-repeat flex justify-center md:py-6 sm:mt-6">
           <button
             onClick={handleOpenPopup}
