@@ -14,8 +14,8 @@ import home from "../../assets/images/svg/16.svg";
 import user from "../../assets/images/svg/9.svg";
 import navigate from "../../assets/images/svg/14.svg";
 import search from "../../assets/images/svg/search.svg";
-import fullScreen from "../../assets/images/svg/14.svg";
-import settings from "../../assets/images/svg/14.svg";
+import fullScreen from "../../assets/images/svg/full-screen.svg";
+import settings from "../../assets/images/svg/settings.svg";
 
 export const sideBarData = [
   {
