@@ -7,7 +7,7 @@ import AuthForm from "./components/AuthForm";
 
 function App() {
   return (
-    <div className=" bg-[#E7E6E2]">
+    <div >
       <Routes>
         <Route path="/" element={<AuthForm />} />
         <Route path="/main-page" element={<MainPage />} />
