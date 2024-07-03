@@ -21,7 +21,7 @@ const StylingSideBar = ({ setOpenSidebar }) => {
             <div key={index}>
               <Link
                 to={item.path}
-                className="flex items-center justify-center w-full duration-300 icon cursor-pointer bg-[#CCBFABBF]"
+                className="flex items-center justify-center w-full duration-300 icon cursor-pointer "
               >
                 <div className="flex items-center gap-2.5">
                   <img className="w-[50px]" src={item.icon} alt="sidebar-img" />
