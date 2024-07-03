@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/svg/logo.svg";
-import bibleText from "../../assets/images/svg/bible-logo.svg";
 import arrowImg from "../../assets/images/svg/next-prev-img.svg";
 import fingerImg from "../../assets/images/svg/fingerprints.svg";
 import SideBar from "./Sidebar";
 import { ThemeIcon } from "./Icons";
-import StylingSideBar from "../StylingSideBar";
-import SystemSideBar from "../SystemSideBar";
 
 const Header = ({
   decreaseFontSize,
@@ -31,22 +28,7 @@ const Header = ({
         >
           <SideBar setOpenSidebar={setOpenSidebar} openSidebar={openSidebar} />
         </div>
-        <div
-          className={`fixed z-40 duration-300 ${
-            openSidebar ? "left-0" : "-left-full"
-          }
-          }`}
-        >
-          <StylingSideBar setOpenSidebar={setOpenStylingSidebar} />
-        </div>
-        <div
-          className={`fixed z-50 duration-300 ${
-            openStylingSidebar ? "left-0" : "-left-full"
-          }
-          }`}
-        >
-          <SystemSideBar />
-        </div>
+
         <div className="flex justify-end sm:justify-between">
           <img
             onClick={() => setOpenSidebar(true)}
@@ -55,7 +37,11 @@ const Header = ({
             alt="img"
           />
           <div className="flex items-end flex-col px-5 sm:px-[29px]">
-            <img className=" w-[200px] md:w-[330px]" src={logo} alt="logo" />
+            <img
+              className="w-[200px] md:w-[330px] mix-blend-multiply"
+              src={logo}
+              alt="logo"
+            />
           </div>
         </div>
         <div className="flex justify-between items-center w-full sm:w-11/12 md:w-[80%] lg:w-[88%] ms-auto">

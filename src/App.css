@@ -40,7 +40,7 @@ input:-webkit-autofill:active {
 .print_img {
   background-image: url("./assets/images/svg/fingerprint.svg");
   background-repeat: no-repeat;
-  background-size: contain; /* or cover, based on your preference */
+  background-size: 70% 70%;
   background-position: center;
   background-attachment: fixed;
 }

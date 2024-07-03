@@ -55,7 +55,7 @@ const Chapter1Page = () => {
         openSidebar={openSidebar}
       />
       <div
-        className={`px-5 sm:px-10 print_img   ms-auto lg:pe-[29px] mt-5 w-full sm:w-11/12 md:w-[80%] lg:w-[88%]"
+        className={`px-5 sm:px-10 print_img   ms-auto 2xl:mx-auto lg:pe-[29px] mt-5 w-full sm:w-11/12 md:w-[80%] lg:w-[88%]"
         }`}
       >
         {chapter1Data.map((items, index) => (
