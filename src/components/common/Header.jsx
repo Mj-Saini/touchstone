@@ -35,30 +35,50 @@ const Header = ({
             alt="img"
           />
           <div className="flex items-end flex-col px-5 sm:px-[29px]">
-            <img className=" w-[200px] md:w-[370px]" src={logo} alt="logo" />
-            <img className=" w-20 md:w-[130px]" src={bibleText} alt="logo" />
+            <img className=" w-[200px] md:w-[330px]" src={logo} alt="logo" />
+            {/* <img className=" w-20 md:w-[130px]" src={bibleText} alt="logo" /> */}
           </div>
         </div>
-        <h2
-          className={`font-normal text-2xl sm:text-3xl lg:text-[38px]  w-full text-center py-3 md:py-5 capitalize mt-3 ${
-            !isDarkTheme
-              ? "text-[#CCC1AF] bg-[#595B72]"
-              : "text-[#393F62] bg-[#CCBFAB38]"
-          }`}
-        >
-          MATTHEW
-        </h2>
-        <div className="flex flex-col sm:flex-row justify-center items-center mt-4 relative gap-2.5">
-          <div className="flex justify-between sm:justify-end w-full gap-3 sm:absolute right-[34px] px-5">
+        <div className="flex justify-between items-center w-full sm:w-11/12 md:w-[80%] lg:w-[88%] ms-auto">
+          <h2
+            className={`font-normal text-lg sm:text-xl md:text-2xl lg:text-[38px] w-full sm:text-center px-3 py-3 md:py-5 capitalize ${
+              !isDarkTheme ? "text-[#CCC1AF] " : "text-[#393F62] "
+            }`}
+          >
+            MATTHEW
+          </h2>
+          <div className="flex items-center justify-center md:gap-3 z-[1] w-full">
+            <img
+              className="max-sm:!w-6 max-sm:!h-6"
+              src={arrowImg}
+              alt="ARROW"
+            />
+            <h2
+              className={`text-lg lg:text-[26px] text-[#740000] whitespace-nowrap  ${
+                !isDarkTheme
+                  ? "text-[#CCC1AF] bg-[#595B72]"
+                  : "text-[#393F62] bg-[#CCBFAB38]"
+              }`}
+            >
+              Chapter 1
+            </h2>
+            <img
+              className="-scale-100 max-sm:!w-6 max-sm:!h-6"
+              src={arrowImg}
+              alt="ARROW"
+            />
+          </div>
+
+          <div className="flex justify-end w-full gap-2 md:gap-3 px-2 md:px-5">
             <span
               onClick={toggleTheme}
-              className="flex justify-center items-center me-4 cursor-pointer"
+              className="flex justify-center items-center me-2 md:me-4 cursor-pointer"
             >
               <ThemeIcon />
             </span>
             <button
               onClick={increaseFontSize}
-              className={` text-3xl border  rounded-lg sm:rounded-xl w-8 h-8 sm:w-11 sm:h-11 flex justify-center items-center  ${
+              className={` text-2xl sm:text-3xl border  rounded-lg sm:rounded-xl w-6 h-6 sm:w-11 sm:h-11 flex justify-center items-center  ${
                 isDarkTheme
                   ? "text-[#740000] border-[#000]"
                   : "text-[#CCBFAB] border-[#CCBFAB]"
@@ -68,7 +88,7 @@ const Header = ({
             </button>
             <button
               onClick={decreaseFontSize}
-              className={` text-3xl border  rounded-lg sm:rounded-xl w-8 h-8 sm:w-11 sm:h-11 flex justify-center items-center  ${
+              className={`  text-2xl sm:text-3xl border  rounded-lg sm:rounded-xl w-6 h-6 sm:w-11 sm:h-11 flex justify-center items-center  ${
                 isDarkTheme
                   ? "text-[#740000] border-[#000]"
                   : "text-[#CCBFAB] border-[#CCBFAB]"
@@ -76,23 +96,6 @@ const Header = ({
             >
               -
             </button>
-          </div>
-          <div className="flex items-center justify-center gap-3 z-[1] pb-4">
-            <img className="max-sm:w-9 max-sm:h-9" src={arrowImg} alt="ARROW" />
-            <h2
-              className={`text-xl md:text-[26px] text-[#740000]  ${
-                !isDarkTheme
-                  ? "text-[#CCC1AF] bg-[#595B72]"
-                  : "text-[#393F62] bg-[#CCBFAB38]"
-              }`}
-            >
-              Chapter 1
-            </h2>
-            <img
-              className="-scale-100 max-sm:w-9 max-sm:h-9"
-              src={arrowImg}
-              alt="ARROW"
-            />
           </div>
         </div>
       </div>

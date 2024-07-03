@@ -51,7 +51,7 @@ const Chapter1Page = () => {
         decreaseFontSize={decreaseFontSize}
       />
       <div
-        className={`px-5 sm:px-10  ms-auto lg:pe-[29px] mt-5 dur ation-300 w-full sm:w-11/12 md:w-[80%] lg:w-[88%] w-full"
+        className={`px-5 sm:px-10  ms-auto lg:pe-[29px] mt-5 dur ation-300 w-full sm:w-11/12 md:w-[80%] lg:w-[88%]"
         }`}
       >
         {chapter1Data.map((items, index) => (

@@ -17,34 +17,6 @@ const Paginations = ({ isDarkTheme }) => {
 
   return (
     <div>
-      <div
-        className={`flex justify-between items-center md:py-4 dur ation-300  w-full sm:w-11/12 md:w-[80%] lg:w-[88%] w-full"
-        } ms-auto px-10`}
-      >
-        <button className="text-[#740000] font-normal text-base md:text-xl lg:text-[32px] flex items-center ">
-          <PreviousIcon />
-          <span
-            className={`hidden sm:inline ${
-              !isDarkTheme ? "text-[#CCBFAB]" : "text-[#393F62]"
-            }`}
-          >
-            Previous Chapter
-          </span>
-        </button>
-
-        <button className="text-[#740000] font-normal text-base md:text-xl lg:text-[32px] flex items-center">
-          <span
-            className={`hidden sm:inline ${
-              !isDarkTheme ? "text-[#CCBFAB]" : "text-[#393F62]"
-            }`}
-          >
-            {" "}
-            Next Chapter
-          </span>
-
-          <NextIcon />
-        </button>
-      </div>
       <div className="bg-[#CCBFAB38s] -3">
         <div className="bg-support_mission bg-cover bg-center bg-no-repeat flex justify-center md:py-6 sm:mt-6">
           <button
