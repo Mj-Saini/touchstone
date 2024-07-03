@@ -55,13 +55,13 @@ const Chapter1Page = () => {
         openSidebar={openSidebar}
       />
       <div
-        className={`px-5 sm:px-10 print_img   ms-auto 2xl:mx-auto lg:pe-[29px] mt-5 w-full sm:w-11/12 max-w-[768px]:w-[85%] md:w-[80%] lg:w-[90%]"
+        className={`px-5 sm:px-10 print_img   ms-auto 2xl:mx-auto lg:pe-[29px] mt-5 w-full sm:w-11/12  md:w-[80%] lg:w-[90%]"
         }`}
       >
         {chapter1Data.map((items, index) => (
           <div className="w-full flex flex-col items-center sm:items-start">
             <h2
-              className={`ff_vardana_bold text-[#393F62] text-lg md:text-[25px] mt-4 opacity-50  bg-[#CCBFAB38] inline-block px-2 py-1.5 shadow-drop_shadow rounded-md text-center sm:text-start ${
+              className={`ff_vardana_bold text-[#393F62] text-lg md:text-[25px] mt-4 opacity-95  bg-[#CCBFAB38] inline-block px-2 py-1.5 shadow-drop_shadow rounded-md text-center sm:text-start ${
                 !isDarkTheme ? "text-[#CCBFAB]" : "text-[#393F62]"
               }`}
             >
