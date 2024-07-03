@@ -32,21 +32,21 @@ const Header = ({
           <SideBar setOpenSidebar={setOpenSidebar} openSidebar={openSidebar} />
         </div>
         <div
-          className={`fixed z-40 duration-300 left-0 ${
-            openSidebar ? "laft-0" : "-left-full"
+          className={`fixed z-40 duration-300 ${
+            openSidebar ? "left-0" : "-left-full"
           }
           }`}
         >
-          <StylingSideBar setOpenSidebar={setOpenSidebar} />
+          <StylingSideBar setOpenSidebar={setOpenStylingSidebar} />
         </div>
-        {/* <div
-          className={`fixed z-40 duration-300 left-0 ${
-            openSidebar ? "laft-0" : "-left-full"
+        <div
+          className={`fixed z-50 duration-300 ${
+            openStylingSidebar ? "left-0" : "-left-full"
           }
           }`}
         >
-          <SystemSideBar setOpenSidebar={setOpenStylingSidebar} />
-        </div> */}
+          <SystemSideBar />
+        </div>
         <div className="flex justify-end sm:justify-between">
           <img
             onClick={() => setOpenSidebar(true)}
@@ -56,7 +56,6 @@ const Header = ({
           />
           <div className="flex items-end flex-col px-5 sm:px-[29px]">
             <img className=" w-[200px] md:w-[330px]" src={logo} alt="logo" />
-            {/* <img className=" w-20 md:w-[130px]" src={bibleText} alt="logo" /> */}
           </div>
         </div>
         <div className="flex justify-between items-center w-full sm:w-11/12 md:w-[80%] lg:w-[88%] ms-auto">
