@@ -4,7 +4,7 @@ import Paginations from "../components/common/Paginations";
 import Header from "../components/common/Header";
 
 const Chapter1Page = () => {
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
   const [textStyle, setTextStyle] = useState({
     fontSize: 24,
     lineHeight: 1.5,
