@@ -30,7 +30,7 @@ const SideBar = ({ setOpenSidebar }) => {
           <FingerPrintIcon />
         </div>
 
-        <div className="flex flex-row sm:flex-col max-sm:justify-center justify-between sm:pb-6 gap-3 md:gap-[20px] sm:h-[882px] lg:h-full ">
+        <div className="flex flex-row sm:flex-col max-sm:justify-center justify-between mt-5 sm:pb-6 gap-3 md:gap-[20px] sm:h-[882px] lg:h-full ">
           {iconSets[iconSetIndex].map((item, index) => (
             <div key={index}>
               <Link

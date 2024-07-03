@@ -16,7 +16,7 @@ const Header = ({
   return (
     <>
       <div
-        className={`sticky top-0   ${
+        className={`sticky z-30 top-0   ${
           isDarkTheme ? "bg-white" : "bg-[#393F62]"
         }`}
       >
@@ -36,7 +36,7 @@ const Header = ({
           />
           <div className="flex items-end flex-col px-5 sm:px-[29px]">
             <img
-              className="w-[200px] md:w-[330px] transparent-bg"
+              className="w-[200px] md:w-[330px]  mix-blend-normal"
               src={logo}
               alt="logo"
             />

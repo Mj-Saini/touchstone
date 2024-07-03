@@ -6,7 +6,7 @@ import Header from "../components/common/Header";
 const Chapter1Page = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
 
-  const [isDarkTheme, setIsDarkTheme] = useState(true);
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
   const [textStyle, setTextStyle] = useState({
     fontSize: 24,
     lineHeight: 1.5,
@@ -61,7 +61,7 @@ const Chapter1Page = () => {
         {chapter1Data.map((items, index) => (
           <div className="w-full flex flex-col items-center sm:items-start">
             <h2
-              className={`ff_vardana_bold text-[#393F62] text-lg md:text-[25px] bg-[#CCBFAB38] inline-block px-2 py-1.5 shadow-drop_shadow rounded-md text-center sm:text-start ${
+              className={`ff_vardana_bold text-[#393F62] text-lg md:text-[25px] mt-4 opacity-50  bg-[#CCBFAB38] inline-block px-2 py-1.5 shadow-drop_shadow rounded-md text-center sm:text-start ${
                 !isDarkTheme ? "text-[#CCBFAB]" : "text-[#393F62]"
               }`}
             >
