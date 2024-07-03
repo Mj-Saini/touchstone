@@ -13,8 +13,6 @@ const Header = ({
   openSidebar,
   setOpenSidebar,
 }) => {
-  const [openStylingSidebar, setOpenStylingSidebar] = useState(false);
-
   return (
     <>
       <div
@@ -38,7 +36,7 @@ const Header = ({
           />
           <div className="flex items-end flex-col px-5 sm:px-[29px]">
             <img
-              className="w-[200px] md:w-[330px] mix-blend-multiply"
+              className="w-[200px] md:w-[330px] transparent-bg"
               src={logo}
               alt="logo"
             />
