@@ -6,7 +6,7 @@ import Header from "../components/common/Header";
 const Chapter1Page = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
 
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
   const [textStyle, setTextStyle] = useState({
     fontSize: 24,
     lineHeight: 1.5,
