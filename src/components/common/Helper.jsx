@@ -5,11 +5,17 @@ import aTozImg from "../../assets/images/svg/a-z-img.svg";
 import searchImg from "../../assets/images/svg/search-img.svg";
 import globeImg from "../../assets/images/svg/globe-img.svg";
 import chatImg from "../../assets/images/svg/chat-img.svg";
-import boldImg from "../../assets/images/svg/color-img.svg";
-import underlineImg from "../../assets/images/svg/color-img.svg";
-import pensilImg from "../../assets/images/svg/color-img.svg";
-import saveImg from "../../assets/images/svg/color-img.svg";
-import noteImg from "../../assets/images/svg/color-img.svg";
+import boldImg from "../../assets/images/svg/boldimg.svg";
+import underlineImg from "../../assets/images/svg/underline.svg";
+import pensilImg from "../../assets/images/svg/edit-img.svg";
+import saveImg from "../../assets/images/svg/save.svg";
+import noteImg from "../../assets/images/svg/14.svg";
+import home from "../../assets/images/svg/14.svg";
+import user from "../../assets/images/svg/16.svg";
+import navigate from "../../assets/images/svg/14.svg";
+import search from "../../assets/images/svg/14.svg";
+import fullScreen from "../../assets/images/svg/14.svg";
+import settings from "../../assets/images/svg/14.svg";
 
 export const sideBarData = [
   {
@@ -34,7 +40,7 @@ export const sideBarData = [
     icon: chatImg,
   },
 ];
-export const sylingSideBarData = [
+export const stylingSideBarData = [
   {
     icon: boldImg,
   },
@@ -49,6 +55,26 @@ export const sylingSideBarData = [
   },
   {
     icon: noteImg,
+  },
+];
+export const systemSidebarData = [
+  {
+    icon: home,
+  },
+  {
+    icon: user,
+  },
+  {
+    icon: navigate,
+  },
+  {
+    icon: search,
+  },
+  {
+    icon: fullScreen,
+  },
+  {
+    icon: settings,
   },
 ];
 export const heroData = [
