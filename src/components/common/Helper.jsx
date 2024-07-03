@@ -5,7 +5,11 @@ import aTozImg from "../../assets/images/svg/a-z-img.svg";
 import searchImg from "../../assets/images/svg/search-img.svg";
 import globeImg from "../../assets/images/svg/globe-img.svg";
 import chatImg from "../../assets/images/svg/chat-img.svg";
-import colorImg from "../../assets/images/svg/color-img.svg";
+import boldImg from "../../assets/images/svg/color-img.svg";
+import underlineImg from "../../assets/images/svg/color-img.svg";
+import pensilImg from "../../assets/images/svg/color-img.svg";
+import saveImg from "../../assets/images/svg/color-img.svg";
+import noteImg from "../../assets/images/svg/color-img.svg";
 
 export const sideBarData = [
   {
@@ -28,6 +32,23 @@ export const sideBarData = [
   },
   {
     icon: chatImg,
+  },
+];
+export const sylingSideBarData = [
+  {
+    icon: boldImg,
+  },
+  {
+    icon: underlineImg,
+  },
+  {
+    icon: pensilImg,
+  },
+  {
+    icon: saveImg,
+  },
+  {
+    icon: noteImg,
   },
 ];
 export const heroData = [
